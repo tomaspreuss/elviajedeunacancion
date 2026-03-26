@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark light">
+  <title>El viaje de una canción</title>
+  <meta name="description" content="Cómo nacen y se producen las canciones de Prehistöricos en el estudio. Taller y experiencia creativa.">
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;0,700;1,400;1,600&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://cdn.cosmos.so" crossorigin>
+  <link rel="preload" as="image" href="https://cdn.cosmos.so/cf0a9c19-d081-4487-9456-05a344a3825e?format=jpeg" imagesrcset="https://cdn.cosmos.so/cf0a9c19-d081-4487-9456-05a344a3825e?format=jpeg 1x">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <main class="page">
+    <section class="hero">
+      <h1 class="title">El viaje de una canción</h1>
+      <p class="subtitle">como nacen y se producen las canciones de Prehistöricos en el estudio</p>
+      <div class="cta">
+        <button id="cta-info" class="button">De qué se trata?</button>
+      </div>
+      <div class="hero-video">
+        <video id="hero-video" src="https://cdn.cosmos.so/5f6c2ee6-f86c-443c-88c6-a702696c6f19.mp4" autoplay muted loop playsinline preload="auto" controlslist="nodownload noplaybackrate nofullscreen" disablepictureinpicture></video>
+      </div>
+      <div id="hero-note" class="hero-note" hidden>
+        <div class="note-paper">
+          <h3>De qué se trata</h3>
+          <div class="note-content">
+  
+            <p>Este taller se trata de conocer cómo es el proceso de creación de una canción de Prehistöricos: desde la primera idea, una melodía o una letra, hasta convertirse en la versión final que verá la luz.</p>
+            <p>A lo largo de este encuentro en el estudio vamos a escuchar maquetas, ver cómo nacen los arreglos, cómo se toman decisiones de producción y cómo se trabaja con músicos dentro del estudio; en otras palabras, todo lo que hace posible que una canción llegue a su forma final.</p>
+            <p>También veremos cómo atravesar la duda, la desmotivación y cómo confiar en una idea para encontrar la forma de terminar una canción sin morir en el intento.</p>
+            <p>Es un espacio pensado para músicos, productores, compositores y cualquier persona interesada en descubrir cómo una idea logra transformarse en una canción. La invitación es a vivir ese proceso desde adentro y conocer cómo nacieron las canciones de Prehistöricos.</p>
+          </div>
+        </div>
+        <div class="note-video">
+          <img id="note-gif" src="./assets/img/im2.gif" alt="De qué se trata - loop" loading="lazy" />
+        </div>
+      </div>
+      <div class="cta">
+        <a href="#postula" id="cta-postular" class="button primary">Quiero participar</a>
+      </div>
+    </section>
+
+    <section id="postula" class="form-section collapsed" aria-hidden="true">
+      <h2 class="form-title form-section-title">Quiero participar</h2>
+      <p class="form-copy form-section-copy">(queremos saber de ti)</p>
+      <div class="form-card">
+        <div class="progress" aria-hidden="true">
+          <div id="progress-bar" class="bar" style="width:0%"></div>
+        </div>
+        <form id="postulacion-form" autocomplete="on" novalidate>
+          <div class="field" data-step="0">
+            <label for="nombre">¿Cómo te llamas?</label>
+            <input id="nombre" name="nombre" type="text" placeholder="Tu nombre y apellido" required>
+          </div>
+          <div class="field" data-step="1">
+            <label>¿Qué tan presente está la música en tu día a día?</label>
+            <div class="options">
+              <label class="opt"><input type="radio" name="musica_presente" value="Escucho música de vez en cuando"> <span>Escucho música de vez en cuando</span></label>
+              <label class="opt"><input type="radio" name="musica_presente" value="Escucho música bastante seguido"> <span>Escucho música bastante seguido</span></label>
+              <label class="opt"><input type="radio" name="musica_presente" value="Escucho música casi todos los días"> <span>Escucho música casi todos los días</span></label>
+              <label class="opt"><input type="radio" name="musica_presente" value="Escucho música todo el tiempo"> <span>Escucho música todo el tiempo</span></label>
+            </div>
+          </div>
+          <div class="field" data-step="2">
+            <label>¿Cuál de estas canciones de Prehistöricos te gustaría conocer desde dentro?</label>
+            <div class="options">
+              <label class="opt"><input type="radio" name="cancion" value="Que suba el momento"> <span>Que suba el momento</span></label>
+              <label class="opt"><input type="radio" name="cancion" value="Con tu cuerpo el huracán"> <span>Con tu cuerpo el huracán</span></label>
+              <label class="opt"><input type="radio" name="cancion" value="Si se acaba"> <span>Si se acaba</span></label>
+              <label class="opt"><input type="radio" name="cancion" value="2 planetas"> <span>2 planetas</span></label>
+              <label class="opt"><input type="radio" name="cancion" value="Presentimiento"> <span>Presentimiento</span></label>
+              <label class="opt"><input type="radio" name="cancion" value="Nuestro destino"> <span>Nuestro destino</span></label>
+              <label class="opt"><input type="radio" name="cancion" value="2 luces"> <span>2 luces</span></label>
+              <label class="opt"><input type="radio" name="cancion" value="Donde mueren todos"> <span>Donde mueren todos</span></label>
+            </div>
+          </div>
+          <div class="field" data-step="3">
+            <label>¿Te interesaría participar en un taller donde conozcas el proceso completo de una canción desde la idea y la maqueta hasta la versión final?</label>
+            <div class="options">
+              <label class="opt"><input type="radio" name="interes_taller" value="Sí"> <span>Sí</span></label>
+              <label class="opt"><input type="radio" name="interes_taller" value="Tal vez"> <span>Tal vez</span></label>
+              <label class="opt"><input type="radio" name="interes_taller" value="No"> <span>No</span></label>
+            </div>
+          </div>
+          <div class="field" data-step="4">
+            <label for="ciudad">¿Desde qué ciudad nos escribes?</label>
+            <input id="ciudad" name="ciudad" type="text" placeholder="Tu ciudad y país" required>
+          </div>
+          <div class="field" data-step="5">
+            <label for="email">¿Dónde podemos escribirte?</label>
+            <input id="email" name="email" type="email" placeholder="tucorreo@ejemplo.com" required>
+          </div>
+          <div class="field" data-step="6">
+            <label>¿Actualmente estás haciendo canciones?</label>
+            <div class="options">
+              <label class="opt"><input type="radio" name="haciendo_canciones" value="Sí, constantemente"> <span>Sí, constantemente</span></label>
+              <label class="opt"><input type="radio" name="haciendo_canciones" value="A veces"> <span>A veces</span></label>
+              <label class="opt"><input type="radio" name="haciendo_canciones" value="No, pero quiero empezar"> <span>No, pero quiero empezar</span></label>
+              <label class="opt"><input type="radio" name="haciendo_canciones" value="No por ahora"> <span>No por ahora</span></label>
+            </div>
+          </div>
+          <div class="field" data-step="7">
+            <label>¿En qué parte del proceso de una canción te cuesta más avanzar?</label>
+            <div class="options">
+              <label class="opt"><input type="radio" name="parte_dificil" value="Encontrar la idea inicial"> <span>Encontrar la idea inicial</span></label>
+              <label class="opt"><input type="radio" name="parte_dificil" value="Desarrollar la canción"> <span>Desarrollar la canción</span></label>
+              <label class="opt"><input type="radio" name="parte_dificil" value="Terminarla"> <span>Terminarla</span></label>
+              <label class="opt"><input type="radio" name="parte_dificil" value="Producirla / grabarla"> <span>Producirla / grabarla</span></label>
+              <label class="opt"><input type="radio" name="parte_dificil" value="No he empezado aún"> <span>No he empezado aún</span></label>
+            </div>
+          </div>
+          <div class="field" data-step="8">
+            <label>¿Te interesa tomar el taller de qué forma?</label>
+            <div class="options">
+              <label class="opt"><input type="radio" name="modalidad" value="Presencial"> <span>Presencial</span></label>
+              <label class="opt"><input type="radio" name="modalidad" value="Online"> <span>Online</span></label>
+            </div>
+          </div>
+          <div class="field" data-step="9">
+            <label for="expectativas">¿Qué te gustaría que sucediera en este taller?</label>
+            <textarea id="expectativas" name="expectativas" rows="4" placeholder="Comparte brevemente tus expectativas o lo que te gustaría trabajar"></textarea>
+          </div>
+          <div class="field" data-step="10">
+            <label for="link_musica">Si tienes música, compártenos un link</label>
+            <input id="link_musica" name="link_musica" type="url" placeholder="Spotify, SoundCloud, YouTube o demo">
+          </div>
+          <div class="wizard-controls">
+            <button id="back" type="button" class="button">Atrás</button>
+            <button id="next" type="button" class="button primary">Siguiente</button>
+            <button id="submit" type="submit" class="button primary" hidden>Enviar postulación</button>
+          </div>
+          <div id="progress-scenery" class="progress-scenery" aria-hidden="true">
+            <svg class="mountains" viewBox="0 0 600 120" preserveAspectRatio="none">
+              <defs>
+                <linearGradient id="ground" x1="0" y1="0" x2="0" y2="1">
+                  <stop offset="0%" stop-color="#dad7cf"/>
+                  <stop offset="100%" stop-color="#cfcbbf"/>
+                </linearGradient>
+              </defs>
+              <rect class="ground" x="0" y="0" width="600" height="120" fill="url(#ground)"/>
+              <path class="ridge1" d="M0 95 L60 70 L120 95 L180 60 L240 95 L300 75 L360 95 L420 65 L480 95 L540 80 L600 95 L600 120 L0 120 Z" />
+              <path class="ridge2" d="M0 104 L50 86 L100 104 L150 82 L200 104 L250 88 L300 104 L350 84 L400 104 L450 90 L500 104 L550 92 L600 104 L600 120 L0 120 Z" />
+            </svg>
+            <div id="progress-sun" class="progress-sun"></div>
+          </div>
+          <p id="form-note" class="form-note">Tus datos se almacenarán de forma segura.</p>
+          <div id="form-status" class="form-status" aria-live="polite"></div>
+        </form>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <p>Prehistöricos · 2026</p>
+    </footer>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="./config.js"></script>
+  <script src="./app.js"></script>
+</body>
+</html>
