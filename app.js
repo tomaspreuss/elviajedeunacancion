@@ -15,6 +15,7 @@
   const noteLoop = document.getElementById("note-loop")
   const sunEl = document.getElementById("progress-sun")
   const sceneryEl = document.getElementById("progress-scenery")
+  const successBanner = document.getElementById("success-banner")
   let infoMode = false
 
   const hasConfig =
@@ -214,7 +215,12 @@
       return
     }
 
-    setStatus("¡Gracias! Recibimos tu postulación.", "success")
+    if (successBanner) {
+      successBanner.hidden = false
+      successBanner.textContent = "¡Gracias! Recibimos tu postulación."
+      formSection.scrollIntoView({ behavior: "smooth", block: "start" })
+    }
+    setStatus("")
     if (noteEl) noteEl.style.display = "none"
     form.reset()
     current = 0
@@ -222,7 +228,7 @@
     setTimeout(() => {
       submitBtn.disabled = false
       if (noteEl) noteEl.style.display = ""
-      setStatus("")
+      if (successBanner) successBanner.hidden = true
     }, 7000)
   }
 
